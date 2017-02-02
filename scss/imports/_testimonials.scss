@@ -1,0 +1,407 @@
+/*  ------------------
+Footer Testimonials
+--------------------*/
+
+
+
+.quote-animator {
+	overflow:hidden;
+	width: 100%;
+	max-width:880px;
+	height: 75px;
+	position: relative;
+	 margin: 85px auto -55px auto;
+	opacity:1;
+	top: -75px;
+	-webkit-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	-moz-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	-o-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	-ms-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	pointer-events:initial;
+}
+.quote-animator.noninteractive, .quote-animator.noninteractive div {
+	pointer-events:none!important;
+}
+.quote-animator {
+	pointer-events:initial;
+}
+.quote-animator.hide-testimonials {
+	opacity:0;
+	pointer-events:none;
+}
+.quote-animator.hide-testimonials div {
+	pointer-events:none;
+}
+.quotes-wrapper {
+	width:3520px;
+}
+.quote-holder {
+	width:880px;
+	height:75px;
+	float:left;
+	position:absolute;
+	transform: translate(0px, 0px);
+	-webkit-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	-moz-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	-o-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	-ms-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	display: block;
+}
+.quote-holder.quote-one {
+	-moz-transform: translate(42px, 0px);
+	-o-transform: translate(42px, 0px);
+	-webkit-transform: translate(42px, 0px);
+	transform: translate(42px, 0px);
+	
+}
+.quote-holder.quote-two {
+	-moz-transform: translate(222px, 0px);
+	-o-transform: translate(222px, 0px);
+	-webkit-transform: translate(222px, 0px);
+	transform: translate(222px, 0px);
+
+}
+.quote-holder.quote-three {
+	-moz-transform: translate(402px, 0px);
+	-o-transform: translate(402px, 0px);
+	-webkit-transform: translate(402px, 0px);
+	transform: translate(402px, 0px);
+
+}
+.quote-holder.quote-four {
+	-moz-transform: translate(582px, 0px);
+	-o-transform: translate(582px, 0px);
+	-webkit-transform: translate(582px, 0px);
+	transform: translate(582px, 0px);
+
+}
+.quote-holder .quote-logo {
+	background: url(../images/testimonial-logos.png) no-repeat;
+	background-size: 656px 92px;
+}
+.quote-holder.quote-one .quote-logo {
+	background-position: 80px -5px;
+}
+.quote-holder.quote-two .quote-logo {
+	background-position: -110px -10px;
+}
+.show-quote-two .quote-holder.quote-two .quote-logo {
+	background-position: -98px -10px;
+}
+.quote-holder.quote-three .quote-logo {
+	background-position: -295px -10px;
+}
+.show-quote-three .quote-holder.quote-three .quote-logo {
+	background-position: -260px -10px;
+}
+.quote-holder.quote-four .quote-logo {
+	background-position: -475px -10px;
+}
+/* hide non-active quotes*/
+.show-quote .quote-holder {
+	opacity:0;
+	pointer-events:none;
+}
+/* show active quotes*/	
+
+/* non-centered */	
+.quote-animator {
+    margin: 85px 0 -55px -135px;
+}
+.show-quote.show-quote-one .quote-holder.quote-one, .show-quote.show-quote-two .quote-holder.quote-two, .show-quote.show-quote-three .quote-holder.quote-three, .show-quote.show-quote-four .quote-holder.quote-four {
+	opacity:1;
+	pointer-events:auto;
+	-moz-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-webkit-transform: translate(0px, 0px);
+	transform: translate(42px, 0px);
+}
+.show-quote.show-quote-two .quote-holder.quote-two {
+	-moz-transform: translate(70px, 0px);
+	-o-transform: translate(70px, 0px);
+	-webkit-transform: translate(70px, 0px);
+	transform: translate(70px, 0px);
+}
+.show-quote.show-quote-three .quote-holder.quote-three {
+	-moz-transform: translate(57px, 0px);
+	-o-transform: translate(57px, 0px);
+	-webkit-transform: translate(57px, 0px);
+	transform: translate(57px, 0px);
+}
+.show-quote.show-quote-four .quote-holder.quote-four {
+	-moz-transform: translate(122px, 0px);
+	-o-transform: translate(122px, 0px);
+	-webkit-transform: translate(122px, 0px);
+	transform: translate(122px, 0px);
+}
+
+/*CENTERED - .show-quote.show-quote-one .quote-holder.quote-one, .show-quote.show-quote-two .quote-holder.quote-two, .show-quote.show-quote-three .quote-holder.quote-three, .show-quote.show-quote-four .quote-holder.quote-four {
+	opacity:1;
+	pointer-events:auto;
+	-moz-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-webkit-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+.show-quote.show-quote-two .quote-holder.quote-two {
+	-moz-transform: translate(40px, 0px);
+	-o-transform: translate(40px, 0px);
+	-webkit-transform: translate(40px, 0px);
+	transform: translate(40px, 0px);
+}
+.show-quote.show-quote-three .quote-holder.quote-three {
+	-moz-transform: translate(120px, 0px);
+	-o-transform: translate(120px, 0px);
+	-webkit-transform: translate(120px, 0px);
+	transform: translate(120px, 0px);
+}
+.show-quote.show-quote-four .quote-holder.quote-four {
+	-moz-transform: translate(40px, 0px);
+	-o-transform: translate(40px, 0px);
+	-webkit-transform: translate(40px, 0px);
+	transform: translate(40px, 0px);
+}*/
+.quote-message-holder div {
+	position:absolute;
+	width:606px;
+	opacity:0;
+	-webkit-transition: all .5s cubic-bezier(0.68, 0, 0.265, 1);
+	-moz-transition: all .5s cubic-bezier(0.68, 0, 0.265, 1);
+	-o-transition: all .5s cubic-bezier(0.68, 0, 0.265, 1);
+	-ms-transition: all .5s cubic-bezier(0.68, 0, 0.265, 1);
+	transition: all .5s cubic-bezier(0.68, 0, 0.265, 1);
+}
+/* quotes with out multiple messages must be shown at start	*/
+.show-quote-one .quote-one .quote-message-holder div, .show-quote-two .quote-two .quote-message-holder div, 
+.show-quote-three .quote-three .quote-message-holder div, .show-quote-four .quote-four .quote-message-holder div {
+	opacity:1;
+} 
+.quote-message-holder p {
+	padding: 0px 24px;
+	text-align: left;
+	font: 17px "bclever_font_light", tahoma, sans-serif;
+	text-shadow: #000 1px 1px 0px;
+	color: #fff;
+	line-height: 1.2em;
+	width: auto;
+	display: inline-block;
+	float: left;
+}
+.quote-message-holder p:before, .quote-message-holder p:after {
+	content: "";
+	height: 7px;
+	width: 9px;
+	display: block;
+	margin: 3px 0 0px -12px;
+	background-image: url(../images/svg_sprite.png);
+	background-position: -92px -393px;
+	background-size: 400px 2500px;
+	position: absolute;
+	opacity: 0.5;
+}
+.quote-message-holder p:after {
+    background-position: -112px -393px;
+    position: relative;
+    display: inline-block;
+    top: -5px;
+}
+/* adjust for different quote lengths*/
+.quote-one .quote-message-holder p:after {
+	margin: -15px -12px 0px 2px;
+}
+.quote-two .quote-message-holder p:after {
+	margin: 3px 174px 0px 2px;
+}
+.quote-three .quote-message-holder p:after {
+	margin: 5px -12px 0px 2px;
+}
+.quote-four .quote-message-holder p:after {
+	margin: 4px 41px 0px 2px;
+}
+.quote-author {
+	font: 13px "bclever_font_medium", tahoma, sans-serif;
+	display: block;
+	float: left;
+	margin: 47px 10px 0 25px;
+	color:#fff;
+	text-align:left;
+	clear:both;
+}
+.quote-logo {
+	width:180px;
+	height:75px;
+	float:left;
+	-webkit-transition: all .8s cubic-bezier(.68, .07, .37, .94);
+	-moz-transition: all .8s cubic-bezier(.68, .07, .37, .94);
+	-o-transition: all .8 cubic-bezier(.68, .07, .37, .94);
+	-ms-transition: all .8s cubic-bezier(.68, .07, .37, .94);
+	transition: all .8s cubic-bezier(.68, .07, .37, .94);
+	transition-delay: .3s;
+ -webkit-transition-delay:.3s;
+}
+.quote-logo a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  border: none;
+}
+.show-quote .quote-logo a  {
+  width: 780px;
+  z-index: 9999;
+  position: absolute;
+  }
+  
+/* hide non-active quotes*/
+.show-quote .quote-message-holder {
+	opacity:1;
+	-webkit-transition: all 1s cubic-bezier(.68, .07, .37, .94);
+	-moz-transition: all 1s cubic-bezier(.68, .07, .37, .94);
+	-o-transition: all 1s cubic-bezier(.68, .07, .37, .94);
+	-ms-transition: all 1s cubic-bezier(.68, .07, .37, .94);
+	transition: all 1s cubic-bezier(.68, .07, .37, .94);
+	transition-delay: .5s;
+	-webkit-transition-delay: .5s;
+}
+.quote-message-holder {
+	width:608px;
+	height:65px;
+	float:left;
+	-webkit-transition: all .5s cubic-bezier(.68, .07, .37, .94);
+	-moz-transition: all .5s cubic-bezier(.68, .07, .37, .94);
+	-o-transition: all .5s cubic-bezier(.68, .07, .37, .94);
+	-ms-transition: all .5s cubic-bezier(.68, .07, .37, .94);
+	transition: all .5s cubic-bezier(.68, .07, .37, .94);
+	margin-top:5px;
+	border-left:1px solid rgba(255,255,255,0.68);
+	opacity:0;
+}
+.quote-three .quote-message-holder {
+	height:56px;
+	margin-top:10px;
+}
+.quote-three .quote-author {
+	margin-top: 32px;
+}
+.quote-three .quote-message-holder p {
+	padding: 5px 24px;
+}
+/* Show partner logos on quote state of homepage*/
+ .home_holder .partner-logos {
+	margin: 0px auto -75px auto;
+	-webkit-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	-moz-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	-o-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	-ms-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	opacity:0;
+	pointer-events:none;
+}
+ .home_holder .partner-logos:hover {
+	margin: 20px auto -75px auto;
+}
+ .home_holder .partner-logos.show-partners {
+	opacity:1;
+	pointer-events:initial;
+}
+.partner-label {
+	position: fixed;
+	margin-top: -18px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	background: -moz-linear-gradient(top, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000), color-stop(100%, rgba(0, 0, 0, 0)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,.7) 0%, rgba(0, 0, 0, 0) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,.7) 0%, rgba(0, 0, 0, 0) 100%);
+	left: 0;
+	color: rgba(167,220,244,0.68);
+	font: 16px "bclever_font_light", tahoma, sans-serif;
+	padding: 12px 0 0 0;
+	opacity: 0;
+	height: 58px;
+	overflow: hidden;
+	display: block;
+	-webkit-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	-moz-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	-o-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	-ms-transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	transition: all 1.2s cubic-bezier(.68, .07, .37, .94);
+	font-style: italic;
+}
+.partner-logos.show-partners:hover .partner-label {
+	opacity:1;
+	margin-top: -38px;
+}
+/* -------------------------------------------------------------------------------------------- */
+/* ----------------------------------------MOBILE--------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+@media (max-width: 945px) {
+.quotes-wrapper {
+	width: 100%;
+	  float: left;
+}
+
+.quote-animator, .quote-animator.hide-testimonials {
+	height: auto;
+  	top: -95px;
+  	margin-bottom: -90px;
+	opacity:1;
+}
+.quote-holder {
+	float: left;
+	clear: both;
+	position: relative;
+	height: auto;
+	width: 100%;
+	border-top: 1px solid rgba(255, 255, 255, 0.4);
+	margin: 10px 0 0 0px;
+}
+.quote-holder.quote-one, .quote-holder.quote-two, .quote-holder.quote-three, .quote-holder.quote-four, .show-quote.show-quote-one .quote-holder.quote-one, .show-quote.show-quote-two .quote-holder.quote-two, .show-quote.show-quote-three .quote-holder.quote-three, .show-quote.show-quote-four .quote-holder.quote-four {
+	
+	-moz-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-webkit-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+.show-quote .quote-holder, .quote-message-holder, .quote-holder.quote-one, .quote-holder.quote-two, .quote-holder.quote-three, .quote-holder.quote-four {
+	opacity:1;
+	pointer-events:initial;
+}
+.quote-message-holder, .quote-three .quote-message-holder {
+	border:none;
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+}
+.quote-message-holder div {
+	position:relative;
+	width: 100%;
+	opacity: 1;
+}
+.quote-message-holder p:after {
+	display:none;
+}
+.quote-author, .quote-three .quote-author {
+	margin: 7px 10px 10px 25px;
+}
+.quote-holder.quote-one .quote-logo {
+	background-position: 20px -5px;
+	margin: 18px 0 5px 0px;
+}
+.quote-holder.quote-two .quote-logo, .show-quote-two .quote-holder.quote-two .quote-logo {
+	background-position: -127px -10px;
+	margin: 5px 0 -12px 0px;
+}
+.quote-holder.quote-three .quote-logo, .show-quote-three .quote-holder.quote-three .quote-logo {
+	background-position: -300px -10px;
+	margin: 5px 0 -23px 0px;
+}
+.quote-holder.quote-four .quote-logo {
+	margin-left:30px;
+	margin: 15px 0 0 23px;
+}
+}

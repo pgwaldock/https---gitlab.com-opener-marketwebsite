@@ -1,0 +1,298 @@
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+forms.css
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Don't use native buttons on iOS */
+input[type=submit], input[type=submit].bc_button, button.bc_button {
+	-webkit-appearance: none;
+}
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+/* Labels ---------------------- */
+label {
+	font-size: 17px;
+}
+label strong {
+	color: #293D4E
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+	border: none;
+	color: #444;
+	display: block;
+	font-size: 17px;
+	margin: 0 0 12px 0;
+	padding: 6px;
+	overflow: hidden;
+	resize: none;
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.18);
+	padding: 8px 12px 8px 12px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.18);
+	border-radius: 4px;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus, .editable:focus {
+	outline: none;
+}
+input[type="text"][disabled], input[type="password"][disabled], input[type="date"][disabled], input[type="datetime"][disabled], input[type="email"][disabled], input[type="number"][disabled], input[type="search"][disabled], input[type="tel"][disabled], input[type="time"][disabled], input[type="url"][disabled], textarea[disabled] {
+	cursor: not-allowed;
+	filter: gray;
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+}
+
+::-webkit-input-placeholder {
+ color:#777;
+}
+:-moz-placeholder { /* Firefox 18- */
+color:#777;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+color:#777;
+}
+:-ms-input-placeholder {
+color:#777;
+}
+/* Checkboxes & radios */
+.chk-holder {
+	float: left;
+	margin: 10px 0px 2px 0;
+}
+.chk-holder label {
+	display: block;
+	margin: 0;
+}
+.chk-holder.dark label {
+	color: #fff;
+}
+input[type="checkbox"], input[type="radio"] {
+	/*display: none;*/
+	position: fixed;
+	width: 22px;
+	height: 22px;
+	opacity: 0;
+}
+input[type="checkbox"] + label span, input[type="radio"] + label span, input[type="checkbox"] + span, input[type="radio"] + span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: -6px 10px 0 0;
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #fff;
+	border: 2px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.18);
+	color: #fff;
+	text-indent: 32px;
+	line-height: 17px;
+}
+input[type="radio"] + label span, input[type="radio"] + span {
+	width: 21px;
+	height: 21px;
+	margin: -6px 10px 0 0;
+	border-radius: 28px;
+}
+.dark input[type="checkbox"] + label span, .dark input[type="radio"] + label span, .dark input[type="checkbox"] + span, .dark input[type="radio"] + span {
+	margin: -6px 10px 0 -2px;
+	border: 2px solid rgba(0,0,0,0.7);
+}
+input[type="checkbox"]:checked + label span:before, input[type="radio"]:checked + label span:before, input[type="checkbox"]:checked + span:before, input[type="radio"]:checked + span:before {
+	font-family: 'icons' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\e941";
+	margin: -3px 0 0 -63px;
+	display: inline;
+	position: relative;
+	color: #2ba6b3;
+	font-size: 21px;
+	position: absolute;
+	width: 20px;
+	pointer-events: none;
+}
+input[type="radio"]:checked + label span:before, input[type="radio"]:checked + span:before {
+	height: 9px;
+	width: 9px;
+	background-color: #2BA6B3;
+	content: "";
+	left: 4px;
+	top: 4px;
+	border-radius: 18px;
+}
+.expandingContainer .chk-holder {
+	float: right;
+}
+/* contact form*/
+.contact-form-iframe {
+	width: 100%;
+height: 385px;
+}
+.contactform-body label {
+    color: #222;
+    font: 16px "bclever_font_medium", tahoma, sans-serif;
+    padding: 15px 0 10px 0;
+    display: block;
+    margin: 0;
+}
+.contactform-body .k-button.cta {
+	width: 100%;
+	margin: 15px 0 0 0;
+}
+.contactform-body textarea {
+	height: 170px;
+}
+.contactform-body .error {
+	    position: absolute;
+    background: #cc3838;
+    z-index: 9;
+    color: #fff;
+    padding: 0px 10px;
+    left: 4px;
+    margin-top: -12px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 14px;
+    visibility: hidden;
+}
+.contactform-body h2 {
+	color: red;
+	font-size: 26px;
+	margin-bottom: 14px;
+}
+.thankyou-message {
+	width: 280px;
+	top: 45%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	position: fixed;
+	display: block;
+	text-align: center;
+	color: #fff;
+}
+.thankyou-message h2 {
+	color: #111;
+	margin-bottom: 10px;
+}
+.thankyou-message p {
+	color: rgba(255,255,255,0.7);
+}
+.thankyou-message p a {
+	font-size: 14px;
+	border: 1px solid #111;
+	padding: 2px 8px 4px 8px;
+	border-radius: 3px;
+	color: #111;
+	background-color:transparent;
+}
+ @-moz-keyframes fadeInAnimation {
+0% {
+ opacity:0;
+}
+ 100% {
+ opacity:1;
+}
+}
+@-webkit-keyframes fadeInAnimation {
+0% {
+ opacity:0;
+}
+ 100% {
+ opacity:1;
+}
+}
+@-o-keyframes fadeInAnimation {
+0% {
+ opacity:0;
+}
+ 100% {
+ opacity:1;
+}
+}
+@-ms-keyframes fadeInAnimation {
+0% {
+ opacity:0;
+}
+ 100% {
+ opacity:1;
+}
+}
+@keyframes fadeInAnimation {
+0% {
+ opacity:0;
+}
+ 100% {
+ opacity:1;
+}
+}
+.contactform-body, .thankyou-body {
+	background-color: transparent;
+	-webkit-animation-duration: 800ms;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-name: fadeInAnimation;
+	-moz-animation-duration: 800ms;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-name: fadeInAnimation;
+	animation-duration: 800ms;
+	animation-timing-function: ease-in-out;
+	animation-name: fadeInAnimation;
+}
+ @keyframes pulseFadeInAnimation {
+0% {
+ color: rgba(255,255,255,0.8);
+}
+ 50% {
+ color: transparent;
+}
+ 100% {
+ color: rgba(255,255,255,0.8);
+}
+}
+.contactform-body input[type="submit"][disabled] {
+	animation-duration: 888ms;
+	animation-timing-function: ease;
+	animation-name: pulseFadeInAnimation;
+	animation-iteration-count: infinite;
+}
+.columns.pad-right {
+	padding-right:20px;
+}
+.contactform-body input[type=submit].k-button.cta {
+    width: auto;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 5px;
+    border: none;
+    background: #2ba6b3;
+    padding: 10px 35px 10px 35px;
+    text-transform: auto;
+    font: 16px "bclever_font_medium", tahoma, sans-serif;
+    border-bottom: 2px solid #145f67;
+    border-top: 1px solid #40becb;
+    height: auto;
+    text-shadow: #1a7c87 -1px -1px 0px;
+    margin: 10px 0 0 0px;
+    float: right;
+}
+
+@media (max-width: 780px) {
+.contact-form-iframe {
+	    height: 580px;
+}
+.columns.pad-right {
+	padding-right:0px;
+}
+}
