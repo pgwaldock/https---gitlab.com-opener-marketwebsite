@@ -305,7 +305,7 @@ class FGContactForm
         $extra_info = $this->ExtraInfoToMail();
         $footer = $this->GetHTMLFooterPart();
 
-        $message = $header."Submission from 'contact us' form:<p>$formsubmission</p><hr/>$extra_info".$footer;
+        $message = $header."Submission from 'Kontainers contact us' form:<p>$formsubmission</p><hr/>$extra_info".$footer;
 
         return $message;
     }
